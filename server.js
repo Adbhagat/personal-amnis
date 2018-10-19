@@ -1,6 +1,8 @@
 const express = require('express');
 const mongoose = require('mongoose');
 
+const questions = require('./routes/api/questions');
+
 const app = express();
 
 //Parsing json
@@ -13,6 +15,9 @@ mongoose
 	.connect(db, {useNewUrlParser:true})
 	.then(() => console.log('MongoDB Connected'))
 	.catch(err => console.log(err));
+
+//User Routes
+app.use('/api/questions', questions);
 
 const port = process.env.PORT || 5000; // for use with heroku
 
