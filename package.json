@@ -1,11 +1,11 @@
 {
-  "name": "cs115",
+  "name": "amnis",
   "version": "1.0.0",
   "description": "Amnis streaming project for CS115!",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-	"server": "nodemon server.js"
+    "server": "nodemon server.js"
   },
   "author": "Adit Bhagat",
   "license": "ISC",
@@ -16,5 +16,13 @@
   },
   "devDependencies": {
     "nodemon": "^1.18.4"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Adbhagat/personal-amnis.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Adbhagat/personal-amnis/issues"
+  },
+  "homepage": "https://github.com/Adbhagat/personal-amnis#readme"
 }
