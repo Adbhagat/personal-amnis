@@ -3,6 +3,10 @@ const Schema = mongoose.Schema;
 
 // Create Question Schema
 const QuestionSchema = new Schema({
+	userID: {
+		type: Number,
+		unique: true
+	},
 	content: {
 		type: String,
 		required: true
